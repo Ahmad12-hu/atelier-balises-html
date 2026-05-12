@@ -1,0 +1,83 @@
+:root {
+  --bg: #08111f;
+  --panel: rgba(13, 24, 41, 0.84);
+  --panel-strong: #12213a;
+  --panel-soft: rgba(255, 255, 255, 0.06);
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #edf4ff;
+  --muted: #b3c1d9;
+  --accent: #ff9f68;
+  --accent-2: #69d2c9;
+  --warning: #ffdb7d;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Lucia sans unicode", "lucia grande, sans-serif";
+  color: var(--text);
+  background: 
+  radial-gradient(circle at top left, rgba(255, 159, 104, 0.28), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(105, 210, 201, 0.22), transparent 20%),
+    linear-gradient(145deg, #06101d, #0c1628 52%, #091425);
+}
+a {
+  color: indianred;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+pre,
+blockquote,
+figure {
+  margin: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.page {
+  min-height:100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.brand {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.eyebrow {
+  text-transform: lowercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #ffc39f;
+}

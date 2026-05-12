@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier des balises de HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="brand">
+                <p class="eyebrow">HTML + CSS + Flexbox</p>
+                <h1>Atelier des balises de HTML</h1>
+                <p class="lede">
+                    Cette page sert de revision: on y retrouve les balisesde strucures,
+                    de textes, de media, de tableau et de formulaire.
+                </p>
+            </div>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#textes">Textes</a></li>
+                <li><a href="#liste">Listes</a></li>
+                <li><a href="#medias">Media</a></li>
+                <li><a href="#tableaux">Tableaux</a></li>
+                <li><a href="#formulaires">Formulaires</a></li>
+            </nav>
+        </header>
+        <main class="site-main">
+            <section class="hero panel">
+                <article class="hero copy">
+                    <header class="section head">
+                        <p class="eyebrow">Objectif</p>
+                        <h2>Apprendre les balises en voyant un vrais page</h2>
+                    </header>
+                    <p>
+                        Le plus important en HTML , c'est de choisir la bonne pour le
+                        bon role. Les CSS , lui, vient ensuite pour habiller et aligner tou ça.
+                    </p>
+                    <div class="hero-tags">
+                        <span class="tag">&lt;header&gt;</span>
+                        <span class="tag">&lt;main&gt;</span>
+                        <span class="tag">&lt;section&gt;</span>
+                        <span class="tag">&lt;article&gt;</span>
+                        <span class="tag">&lt;form&gt;</span>
+                        <span class="tag">&lt;table&gt;</span>
+                    </div>
+                </article>
+                <aside class="hero-aside">
+                    <h2>Regle Simple</h2>
+                    <ul>
+                        <li>HTML = Structure et sens</li>
+                        <li>CSS = Style et placement</li>
+                        <li>Flexbox = organisation des blocs</li>
+                    </ul>
+                </aside>
+            </section>
+            <div class="content-shel">
+                <aside class="sumary-column">
+                    <section class="panel note-card">
+                        <h2>Plan rapide</h2>
+                        <ol>
+                            <li>Structure</li>
+                            <li>Textes</li>
+                            <li>Listes</li>
+                            <li>Media</li>
+                            <li>Tableaux</li>
+                            <li>Formulaires</li>
+                            <li>Formulaire</li>
+                        </ol>
+                    </section>
+                    <section class="panel note-card">
+                        <h2>Astuce</h2>
+                        <p>
+                            Quand tu lis le code, cherche d'abord le parent, puis ses enfants.
+                            C'est la meilleure façon de compredre le layout.
+                        </p>
+                        <details>
+                            <summary>Petit rappel</summary>
+                            <p>
+                                Un parent contient. Un enfant est contenu. Des freres partage le meme parent.
+                            </p>
+                        </details>
+                    </section>
+                </aside>
+
+                <div class="lesson-column">
+                    <section class="panel" id="structure">
+                        <header class="section-head">
+                            <p class="eyebrow">Structure</p <h2>Les balises qui definissent la page</h2>
+                        </header>
+                        <div class="card-row">
+                            <article class="card wide-card">
+                                <p>
+                                    Ici, on visualise le role de <strong>header</strong>,
+                                    <strong>nav</strong>, <strong>aside</strong>, <strong>section</strong>,
+                                    <strong>article</strong>
+                                    et <strong>footer</strong>.
+                                </p>
+                                <div class="layout-sample">
+                                    <header>Header</header>
+                                    <nav>Nav</nav>
+                                    <div class="layout-middle">
+                                        <aside>Aside</aside>
+                                        <section>Section</section>
+                                        <article>Article</article>
+                                    </div>
+                                    <footer>Footer</footer>
+                                </div>
+                                <p class="hint">
+                                    <code>&latail;</code> reste utile comme boite generique,
+                                    mai si une balise semantique existe, elle est souvant
+                                    meilleure.
+                                </p>
+                            </article>
+                            <article class="card">
+                                <h3>Niveaux de titres</h3>
+                                <div class="heading-stack">
+                                    <h3>H3 pour un blic</h3>
+                                    <h4>H4 pour un sous-bloc</h4>
+                                    <h5>H5 pour un detail</h5>
+                                    <h6>H6 pour une note fine</h6>
+                                </div>
+                                <p>
+                                    La page a deja un <strong>H1</strong> et plusieurs <strong>H2</strong>. Ici tu vois
+                                    la suite de la hierarchie.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="panel" id="texte">
+                        <header class="section-head">
+                            <p class="eyebrow">Texte</p>
+                            <h2>Les balises qui donnenr du snes au contenue</h2>
+                        </header>
+
+                        <div class="card-row">
+                            <article class="card">
+                                <h3>Texte couran</h3>
+                                <p>
+                                    Dans un <span class="inline-pill">paragrphe</span>, tu peux
+                                    marquer un mot avec <strong>strong</strong>, insister avec
+                                    <em>em</em>, surligner avec <mark>mark</mark>, ou donner une
+                                    precision en <small>petit texte</small>
+                                <div class=""></div>
+                                </p>
+                                <p>
+                                    On peut utiliser <abbr title="HyperText Markup Language">HTML</abbr>,
+                                    une date avec <time datetime="2026-05-12">12 mai 2026</time>,
+                                    et une citation courte avec <q>une phrase citee</q>
+                                </p>
+                                <p>
+                                    La formulaire de l'eau est H<sub>2</sub>O, 2<sub>3</sub>
+                                    donne 8. <br>
+                                    Cette ligne utilise aussi la balise <code>&lt;br&gt;</code>
+                                </p>
+                                Mauvais idee: <del>tout fzire avec div</del>.Bonne iddee:
+                                <ins>choisir une balise semantique</ins>
+                            </article>
+                            <article class="card">
+                                <h3>Code et citation longues</h3>
+                                <pre><code>&lt;article&gt;
+  &lt;h3&gt;Titre&lt;/h3&gt;
+  &lt;p&gt;Contenu&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                                <blockquote>
+                                    <p>
+                                        Le bon HTML nepense pas d'abord a la couleur ou a la taille.
+                                        Il pense d'abord au sens de chaque morceau de contenu.
+                                    </p>
+                                </blockquote>
+                                <p class="source-line"><cite>Notes de revision</cite></p>
+                                <p>
+                                    Racourci utile: <kbd>Ctrl</kbd> + <kbd>S</kbd>
+                                    Variable: <var>score</var>. Resultat possible:
+                                </p>
+                            </article>
+                        </div>
+                        <hr class="section-rule">
+                    </section>
+                    <section class="panel" id="liste">
+                        <header class="section-head">
+                            <p class="eyebrow">Listes</p>
+                            <h2>Trois façon de ranger les informations</h2>
+                        </header>
+                        <div class="card-row thee-up">
+                            <article class="card">
+                                <h3>Liste non ordonnee</h3>
+                                <ul>
+                                    <li>HTML pour la structure</li>
+                                    <li>CSS pour le style</li>
+                                    <li>JavScript pour l'interaction</li>
+                                </ul>
+                            </article>
+                            <article class="card">
+                                <h3>Liste ordonee</h3>
+                                <ol>
+                                    <li>Lire la structure globale</li>
+                                    <li>Identifier les sections</li>
+                                    <li>Observer les balises semantiques</li>
+                                </ol>
+                            </article>
+                            <article class="card">
+                                <h3>Liste de definitions</h3>
+                                <dl>
+                                    <dt>Parent</dt>
+                                    <dd>L'element qui contient d'autres elements.</dd>
+                                    <dt>Enfant</dt>
+                                    <dd>L'element place a l'interieur d'un parent</dd>
+                                    <dt>Frere</dt>
+                                    <dd>Deux elements qui ont le meme parent</dd>
+                                </dl>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="class" id="media">
+                        <header class="section-head">
+                            <p class="eyebrow">Media</p>
+                            <h2>Image, son, video et page integree</h2>
+                        </header>
+                        <div class="card-row media-media-row">
+                            <figure class="card media-card">
+                                <img src="html-guide.svg"
+                                    alt="Schema simple d'un layout HTML avec header, nav, main et footer.">
+                                <figcaption>
+                                    <strong>Figure</strong> regroupe un media et sa <strong>figcaption</strong>
+                                </figcaption>
+                            </figure>
+
+                            <article card media-card>
+                                <h3>Audio et video</h3>
+                                <audio controls preload="none">
+                                    <source
+                                        src="data:audio/wav;base64,UklGRtQEAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YbAEAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA=="
+                                        type="audio/wav">
+                                    Ton navigateur ne peut pas lire cet audio.
+                                </audio>
+                                <video controls poster="html-guide.svg">
+                                    <source src="data:video/mp4;base64," type="video/mp4">
+                                    Ton navigateur ne peut pas lire cette video.
+                                </video>
+                                <p class="hint">
+                                    Ici, la balise <code>&lt;source&gt;</code> montre comment on
+                                    branche un fichier media a <code>audio</code> ou
+                                    <code>video</code>.
+                                </p>
+                            </article>
+
+                            <article class="card media-card">
+                                <h3>Iframe</h3>
+                                <iframe title="Mini page d'exemple dans une iframe"
+                                    srcdoc='<!DOCTYPE html><html lang="fr"><body style="margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fff7ed;color:#7c2d12;font-family:Arial,sans-serif;"><article style="padding:24px;text-align:center;"><h2 style="margin:0 0 8px;">Hello iframe</h2><p style="margin:0;">Une page HTML peut vivre dans une autre page.</p></article></body></html>'>
+                                </iframe>
+                                <p class="hint">
+                                    <code>&lt;ifram&gt;</code> sert a integrer une autre page
+                                    web dans la page actuelle.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="panel" id="tableaux">
+                        <header class="section-head">
+                            <p class="eyebrow">Tableau</p>
+                            <h2>Quand l'information doit rster en ligne et colonnes</h2>
+                        </header>
+
+                        <div class="table-wrap">
+                            <table>
+                                <caption>Revision des familles de balises HTML</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Famille</th>
+                                        <th scope="col">Balises</th>
+                                        <th scope="col">Role</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Structure</th>
+                                        <td>header, nav, main, section</td>
+                                        <td>Organiser la page</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Texte</th>
+                                        <td>p, strong, em, code</td>
+                                        <td>Donner du sens au contenu</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Formulaire</th>
+                                        <td>form, label, input, button</td>
+                                        <td>Recuperer des donnees</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3">Astuce: un tableau sert aux donnees, pas au layout.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="panel" id="formulaire">
+                        <header class="section-head">
+                            <p class="eyebrow">Formulaire</p>
+                            <h2>Les balises qui permettent de saisir des informations</h2>
+                        </header>
+
+                        <form class="study-form">
+                            <fieldset>
+                                <legend>Ton profil de revision</legend>
+
+                                <div class="form-row">
+                                    <label for="prenom">Prenom</label>
+                                    <input id="prenom" name="prenom" type="text" placeholder="Ex: Awa">
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="email" placeholder="nom@example.com">
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="date-revision">Date de revision</label>
+                                    <input id="date-revision" name="date-revision" type="date">
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="niveau">Niveau prefere</label>
+                                    <select id="niveau" name="niveau">
+                                        <option value="">Choisir un niveau</option>
+                                        <option value="debutant">Debutant</option>
+                                        <option value="intermediaire">Intermediaire</option>
+                                        <option value="avance">Avance</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="objectif">Objectif</label>
+                                    <textarea id="objectif" name="objectif" rows="4"
+                                        placeholder="Expliquer ce que tu veux pratiquer"></textarea>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Suivi de progression</legend>
+
+                                <div class="form-row">
+                                    <label for="motivation">Motivation</label>
+                                    <input id="motivation" name="motivation" type="range" min="0" max="10" value="7">
+                                </div>
+
+                                <div class="status-row">
+                                    <p>Progression generale</p>
+                                    <progress value="72" max="100">72%</progress>
+                                </div>
+
+                                <div class="status-row">
+                                    <p>Confiance du jour</p>
+                                    <meter min="0" max="100" value="85">85%</meter>
+                                </div>
+
+                                <div class="status-row">
+                                    <p>Etat actuel</p>
+                                    <output>Je revise les balises une par une.</output>
+                                </div>
+                            </fieldset>
+
+                            <div class="button-row">
+                                <button type="submit">Envoyer</button>
+                                <button type="reset" class="ghost-button">Reinitialiser</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>
+                Cette page utilise un grand nombre de balises HTML courantes pour
+                t'aider a reviser en contexte.
+            </p>
+            <address>
+                Contact fictif:
+                <a href="mailto:atelier@example.com">atelier@example.com</a><br>
+                Dakar, Senegal
+            </address>
+        </footer>
+        </tbody>
+        </table>
+    </div>
+    </section>
+    </div>
+    </div>
+    </main>
+    </div>
+</body>
+
+</html>
